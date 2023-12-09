@@ -1,0 +1,2 @@
+In this project of course Responsive Web Design, I'll learn CSS by designing a menu page (Cafe Menu) for a cafe webpage.
+So, I can use CSS to set the color, font, size, and other aspects of HTML elements

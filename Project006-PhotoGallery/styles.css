@@ -1,0 +1,68 @@
+*{
+    /*box-sizing: content-box;
+    The border-box sizing model does the opposite of border-box and it's default. The total width of the element, not including padding and border.*/
+    box-sizing: border-box;
+    /*The border-box sizing model does the opposite of content-box. The total width of the element, including padding and border, will be the explicit width set. The content of the element will shrink to make room for the padding and border.*/
+}
+/*
+.gallery{
+    width: 50%;
+    border: 5px solid red;
+}
+
+img{
+    width: 100%;
+    padding: 5px;
+    border: 5px solid blue;
+}
+*/
+
+body{
+    margin: 0;
+    font-family: sans-serif; 
+    background-color: #f5f6f7;
+}
+
+.header{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+}
+
+.gallery{
+    /*Flexbox is a one-dimensional CSS layout that can control the way items are spaced out and aligned within a container. To use it, give an element a display property of flex. This will make the element a flex container. Any direct children of a flex container are called flex items.*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 16px; /*gap property sets the gaps, also known as gutters, between rows and columns*/
+}
+
+.gallery img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;    
+    object-fit: cover; /*the object-fit property and set it to cover. This will tell the image to fill the img container while maintaining aspect ratio, resulting in cropping to fit.*/
+    border-radius: 10px;
+}
+
+.gallery::after{ /* pseudo-element that creates an element that is the last child of the selected element, in this case, .gallery*/
+    content: ""; /*empty element*/
+    width: 350px; /*the same width of img*/
+}
+
+/*By me*/
+.footer{
+    text-align: center;
+    padding: 125px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-top: 4px solid #fdb347;
+}

@@ -1,0 +1,84 @@
+h1, h2, p{
+    text-align: center;
+}
+body{
+   /* background-color: burlywood; */
+   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+   font-family: sans-serif;
+   padding: 20px;
+}
+.menu/* #menu */{
+    width: /* 300px */ 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+}
+/*align itens menu*/
+.flavor, .dessert{
+    text-align: left;
+    /*width: 49%;*/
+    width: 75%;
+}
+.price{
+    text-align: right;
+    /*width: 49%;*/
+    width: 25%;
+}
+.item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+h1, h2 {
+    font-family: Impact, serif;
+}
+.established{
+    font-style: italic;
+}
+h1{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+h2{
+    font-size: 30px;
+}
+hr{
+    height:2px; /*step67 3px and change to 2px in step70*/
+    background-color:brown; /*step68*/
+    border-color:brown; /*step69*/
+}
+.bottom-line{
+    margin-top: 25px;
+}
+.address {
+    margin-top: 5px;
+}
+
+img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: -25px;
+}
+
+/*FOOTER*/
+footer{
+    font-size: 14px;
+}
+a{/*Changing the default color of link*/
+    color: black;
+}
+/*Pseudo-selectors: looks like a:active { propertyName: propertyValue; }*/
+a:visited { /*changing the color when link is visited*/
+    color: black;
+}
+a:hover { /*changing the color when user mouse hover*/
+    color: brown;
+}
+a:active { /*changing the color when the link is actually being clicked */
+    color: brown;
+}
