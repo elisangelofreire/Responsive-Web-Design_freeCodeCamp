@@ -9,3 +9,4 @@ Project with 68 steps
 # Accessibility
 1. Lang="en" in <html>
 2. Charset in <meta charset="UTF-8">
+3. a viewport definition tells the browser how to render the page. Including one betters visual accessibility on mobile, and improves SEO (search engine optimization). in <meta name="viewport" content="width=device-width, initial-scale=1.0">
