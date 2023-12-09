@@ -8,3 +8,4 @@ Project with 68 steps
 
 # Accessibility
 1. Lang="en" in <html>
+2. Charset in <meta charset="UTF-8">
