@@ -4,3 +4,7 @@ body {
     font-family: Helvetica;
     margin: 0;
 }
+
+#logo{
+    width: max(100px, 18vw);
+}
