@@ -13,4 +13,5 @@ Project with 68 steps
 4. Another important meta element for accessibility and SEO is the description definition. The value of the content attribute is used by search engines to provide a description of your page. in <meta name="description" content="Lear html accessibility quiz">
 5. Given title: <title>Accessibility: Building a Quiz</title>
 6. Given The <header> element (be used to introduce the page, as well as provide a navigation menu:  <img>, <h1>, and <nav> element) and the <main> element (that will contain the core content of your page).
-7. Create a <section> in <form> to semantically separate the content
+7. Create a <section> in <form> to semantically separate the content.
+8. Add attribute role: To increase the page accessibility, the role attribute can be used to indicate the purpose behind an element on the page to assistive technologies. The role attribute is a part of the Web Accessibility Initiative (WAI), and accepts preset values.
