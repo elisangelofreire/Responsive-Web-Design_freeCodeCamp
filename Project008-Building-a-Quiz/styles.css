@@ -19,7 +19,7 @@ header{
     display: flex;
 }
 
-h1{
+h1{ 
     color: #f1be32;
     font-size: min(5vw, 1.2em)
   }
