@@ -15,3 +15,4 @@ Project with 68 steps
 6. Given The <header> element (be used to introduce the page, as well as provide a navigation menu:  <img>, <h1>, and <nav> element) and the <main> element (that will contain the core content of your page).
 7. Create a <section> in <form> to semantically separate the content.
 8. Add attribute role: To increase the page accessibility, the role attribute can be used to indicate the purpose behind an element on the page to assistive technologies. The role attribute is a part of the Web Accessibility Initiative (WAI), and accepts preset values.
+9. Every region role requires a label, which helps screen reader users understand the purpose of the region. One method for adding a label is to add a heading element inside the region and then reference it with the aria-labelledby attribute.h2 element with an id matching the corresponding aria-labelledby

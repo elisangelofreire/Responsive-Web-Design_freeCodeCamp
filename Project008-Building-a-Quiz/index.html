@@ -22,16 +22,29 @@
 
     <main>
         <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="POST">
-            <!-- Section 001-->
+            <!-- 
             <section role="region">
 
             </section>
 
-            <!-- Section 002-->
             <section role="region"></section>
+           
+            <section role="region"></section>
+            -->
 
+            <!-- Every region role requires a label, which helps screen reader users understand the purpose of the region. One method for adding a label is to add a heading element inside the region and then reference it with the aria-labelledby attribute. h2 element with an id matching the corresponding aria-labelledby-->
+            <!-- Section 001-->
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">Studeint informations</h2>
+            </section>
+            <!-- Section 002-->
+            <section role="region" aria-labelledby="html-questions">
+                <h2 id="html-questions">Questions about HTML</h2>
+            </section>
             <!-- Section 003-->
-            <section role="region"></section>
+            <section role="region" aria-labelledby="css-questions">
+                <h2 id="css-questions">Questions about CSS</h2>
+            </section>
           </form>
     </main>
 </body>
