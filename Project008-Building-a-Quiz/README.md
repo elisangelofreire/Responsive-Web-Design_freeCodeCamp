@@ -18,3 +18,4 @@ Project with 68 steps
 9. Every region role requires a label, which helps screen reader users understand the purpose of the region. One method for adding a label is to add a heading element inside the region and then reference it with the aria-labelledby attribute.h2 element with an id matching the corresponding aria-labelledby
 10. **Typeface** plays an important role in the accessibility of a page. Some fonts are easier to read than others, and this is especially true on low-resolution screens. *Verdana*, and *sans-serif* family.
 11. **Navigation within the page**, give each anchor element an href corresponding to the id of some elements.
+12. It is important to **link each input to the corresponding label element**. This provides assistive technology users with a visual reference to the input. This is done by giving the label a for attribute, which contains the id of the input.
