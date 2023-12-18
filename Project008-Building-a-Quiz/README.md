@@ -17,3 +17,4 @@ Project with 68 steps
 8. Add attribute role: To increase the page accessibility, the role attribute can be used to indicate the purpose behind an element on the page to assistive technologies. The role attribute is a part of the Web Accessibility Initiative (WAI), and accepts preset values.
 9. Every region role requires a label, which helps screen reader users understand the purpose of the region. One method for adding a label is to add a heading element inside the region and then reference it with the aria-labelledby attribute.h2 element with an id matching the corresponding aria-labelledby
 10. **Typeface** plays an important role in the accessibility of a page. Some fonts are easier to read than others, and this is especially true on low-resolution screens. *Verdana*, and *sans-serif* family.
+11. **Navigation within the page**, give each anchor element an href corresponding to the id of some elements.
