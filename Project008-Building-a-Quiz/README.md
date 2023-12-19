@@ -20,3 +20,4 @@ Project with 68 steps
 11. **Navigation within the page**, give each anchor element an href corresponding to the id of some elements.
 12. It is important to **link each input to the corresponding label element**. This provides assistive technology users with a visual reference to the input. This is done by giving the label a for attribute, which contains the id of the input.
 13. Keeping in mind best-practices for form <inputs>, give each input an appropriate **type** and **name** attribute. Then, give **placeholder** attribute.
+14. **label** and **placeholder**: A **placeholder** is actually not a best-practice for accessibility; too often, users confuse the placeholder text with an actual input value - they think there is already a value in the input. Relying on the **label** being the best-practice.
