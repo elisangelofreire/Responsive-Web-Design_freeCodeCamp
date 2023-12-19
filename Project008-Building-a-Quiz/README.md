@@ -19,3 +19,4 @@ Project with 68 steps
 10. **Typeface** plays an important role in the accessibility of a page. Some fonts are easier to read than others, and this is especially true on low-resolution screens. *Verdana*, and *sans-serif* family.
 11. **Navigation within the page**, give each anchor element an href corresponding to the id of some elements.
 12. It is important to **link each input to the corresponding label element**. This provides assistive technology users with a visual reference to the input. This is done by giving the label a for attribute, which contains the id of the input.
+13. Keeping in mind best-practices for form <inputs>, give each input an appropriate **type** and **name** attribute. Then, give **placeholder** attribute.
