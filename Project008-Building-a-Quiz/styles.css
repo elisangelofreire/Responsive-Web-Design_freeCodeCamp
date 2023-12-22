@@ -36,6 +36,10 @@ nav li{ /*or nav > ul > li*/
     display: block;
 }
 
+li > a{ 
+    color: #fff; /*contrast ratio of at least 7:1*/
+}
+
 h1, h2{
     font-family: Verdana, sans-serif;
 }
