@@ -22,3 +22,4 @@ Project with 68 steps
 13. Keeping in mind best-practices for form <inputs>, give each input an appropriate **type** and **name** attribute. Then, give **placeholder** attribute.
 14. **label** and **placeholder**: A **placeholder** is actually not a best-practice for accessibility; too often, users confuse the placeholder text with an actual input value - they think there is already a value in the input. Relying on the **label** being the best-practice.
 15. abbreviation is not best-practice for screen-reader: <label for="date-birth">D.O.B:<span class="sr-only">(Date of Birth)</span></label>
+16. Two final semantic HTML elements for this project are the <footer> and <address> elements. The <footer> element is a container for a collection of content that is related to the page, and the <address> element is a container for contact information for the author of the page. After the main element, add one footer element, and nest one address element within it.
