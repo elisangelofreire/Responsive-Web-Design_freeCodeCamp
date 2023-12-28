@@ -36,8 +36,15 @@ nav li{ /*or nav > ul > li*/
     display: block;
 }
 
+nav li:hover{
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+}
+
 li > a{ 
     color: #fff; /*contrast ratio of at least 7:1*/
+    text-decoration: none;
 }
 
 h1, h2{
