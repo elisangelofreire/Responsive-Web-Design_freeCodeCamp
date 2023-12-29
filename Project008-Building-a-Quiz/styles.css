@@ -27,6 +27,12 @@ main{
     padding-top: 25px;
 }
 
+section{
+    width: 80%;
+    margin: 0 auto 10px;
+    max-width: 600px;
+}
+
 h1{ 
     color: #f1be32;
     font-size: min(5vw, 1.2em);
