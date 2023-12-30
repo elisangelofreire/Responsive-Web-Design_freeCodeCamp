@@ -91,6 +91,14 @@ input{
     font-size: 16px;
 }
 
+.info input, .info label{
+    display: inline-block;
+}
+  
+label{
+    text-align: right;
+}
+
 .info > input{ /* or:.info input*/
     width: 50%;
     text-align: left;
