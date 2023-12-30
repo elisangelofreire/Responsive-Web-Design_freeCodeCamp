@@ -168,3 +168,8 @@ footer{
 footer, footer a{
     color: #fff;
 }
+
+address{
+    text-align: center; 
+    padding: 5px;
+}
