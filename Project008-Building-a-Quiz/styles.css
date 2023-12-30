@@ -135,11 +135,16 @@ p{ /*make the p appear as a higher priority*/
     border: 0;
 }
 
+p::before{
+    content: "Question #";
+}
+
 .question{/*removing border around the fieldset*/
     border: none;
     padding-bottom: 0;
 }
 
-p::before{
-    content: "Question #";
+.answers-list{ /*removing bullets from ul/li elements*/
+    list-style: none;
+    padding: 0;
 }
