@@ -99,6 +99,14 @@ label{
     text-align: right;
 }
 
+.question-block{ /*to neaten it*/
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 5px;
+}
+
 .info > input{ /* or:.info input*/
     width: 50%;
     text-align: left;
