@@ -107,6 +107,12 @@ label{
     padding-top: 5px;
 }
 
+p{ /*make the p appear as a higher priority*/
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
 .info > input{ /* or:.info input*/
     width: 50%;
     text-align: left;
