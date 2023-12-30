@@ -1,5 +1,7 @@
-*{ /*Set jumping in some viewport*/
-    scroll-behavior: smooth;
+@media (prefers-reduced-motion: no-preference){
+    *{ /*Set jumping in some viewport*/
+        scroll-behavior: smooth;
+    }
 }
 
 body {
