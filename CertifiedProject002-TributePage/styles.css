@@ -1,0 +1,53 @@
+
+body {
+    background: #f5f6f7;
+    color: #1b1b32;
+    font-family: Helvetica;
+    margin: 0;
+    line-height: 1.7rem;
+}
+
+#title{
+    background-color: goldenrod;
+    padding: 40px;
+    margin-top: 0;
+}
+
+#img-div{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+}
+#image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 5px 0 5px 2px goldenrod;
+}
+
+section{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 600;
+    padding-top: 25px;
+}
+
+#title, #title-description, #title-tribute-info, .more-info{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+h3{
+    color: goldenrod;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.more-info{
+    padding: 25px 0;
+}
