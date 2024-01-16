@@ -15,4 +15,8 @@ span[class~="sr-only"]{
     height: 1px;
     overflow: hidden;
     white-space: nowrap;
+    /*To hidden element out of the document. Just for screen reader */
+    position: absolute;
+    padding: 0;
+    margin: -1px;
 }
