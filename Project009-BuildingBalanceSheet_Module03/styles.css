@@ -69,10 +69,10 @@ section{
     padding: 0 0.75rem 1.5rem 0.75rem;
 }
 
-span/*:not(.sr-only)*/{
-    /*Now that you have added the !important keyword, you can remove the :not(.sr-only) from your span selector.*/
+/*span/*:not(.sr-only){
+    /*Now that you have added the !important keyword, you can remove the :not(.sr-only) from your span selector.
     font-weight: normal;
-}
+}*/
 
 table{
     border-collapse: collapse;
