@@ -105,3 +105,8 @@ tr[class="total"]{ /*The [attribute="value"] selector targets any element that h
     border-bottom: 4px double #0a0a23;
     font-weight: bold;
 }
+
+tr[class="total"] th{
+    text-align: left;
+    padding: 0.5rem 0 0.25rem 0.5rem;
+}
