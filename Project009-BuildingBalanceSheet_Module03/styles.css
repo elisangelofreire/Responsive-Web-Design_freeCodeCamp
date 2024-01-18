@@ -73,3 +73,8 @@ span/*:not(.sr-only)*/{
     /*Now that you have added the !important keyword, you can remove the :not(.sr-only) from your span selector.*/
     font-weight: normal;
 }
+
+table{
+    border-collapse: collapse;
+    border: 0;
+}
