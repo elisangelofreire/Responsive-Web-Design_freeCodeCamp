@@ -7,7 +7,7 @@ body{
     color: #0a0a23;
 }
 
-span[class~="sr-only"]{
+span[class~="sr-only"]{ /*The span[class~="sr-only"] syntax will target any span element that has a class set "sr-only" value.*/
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
@@ -57,4 +57,10 @@ section{
     margin: 0 -2px;
     padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
     z-index: 999;
+}
+
+#years span[class]{ /*The span[class] syntax will target any span element that has a class attribute set, regardless of the attribute's value.*/
+    font-weight: bold;
+    width: 4.5rem;
+    text-align: right;
 }
