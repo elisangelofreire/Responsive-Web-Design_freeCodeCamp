@@ -8,17 +8,17 @@ body{
 }
 
 span[class~="sr-only"]{ /*The span[class~="sr-only"] syntax will target any span element that has a class set "sr-only" value.*/
-    border: 0;
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    white-space: nowrap;
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
     /*To hidden element out of the document. Just for screen reader */
-    position: absolute;
-    padding: 0;
-    margin: -1px;
+    position: absolute !important;
+    padding: 0 !important;
+    margin: -1px !important;
 }
 
 h1{
@@ -70,5 +70,6 @@ section{
 }
 
 span:not(.sr-only){
+    
     font-weight: normal;
 }
