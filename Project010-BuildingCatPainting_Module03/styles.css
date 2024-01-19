@@ -14,6 +14,14 @@ body{
     width: 205px;
     height: 180px;
     border: 1px solid #000;
-    border-radius: 46%;
-    
+    border-radius: 46%;  
+}
+
+.box{
+    position: absolute;
+    top: 800px;
+    left: 650px;
+    width: 200px;
+    height: 600px;
+    background-color: #000;
 }
