@@ -23,6 +23,8 @@ body{
 .cat-left-ear{
     border: 35px solid transparent;
     border-bottom: 70px solid #5e5e5e;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
     position: absolute;
     top: -26px;
     left: -31px;
