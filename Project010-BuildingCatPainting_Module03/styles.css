@@ -29,6 +29,7 @@ body{
     top: -26px;
     left: -31px;
     transform: rotate(-45deg);
+    z-index: 1;
 }
 
 .cat-right-ear{
@@ -40,4 +41,5 @@ body{
     transform: rotate(45deg);
     border-top-left-radius: 90px;
     border-top-right-radius: 10px;
+    z-index: 1;
 }
