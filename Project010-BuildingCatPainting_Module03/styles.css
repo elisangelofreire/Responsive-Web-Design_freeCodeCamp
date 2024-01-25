@@ -34,4 +34,7 @@ body{
 .cat-right-ear{
     border: 35px solid transparent;
     border-bottom: 70px solid #5e5e5e;
+    position: absolute;
+    top: -26px;
+    left: 163px;
 }
