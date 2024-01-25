@@ -43,3 +43,9 @@ body{
     border-top-right-radius: 10px;
     z-index: 1;
 }
+
+.cat-left-inner-ear{
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #3b3b4f;
+}
