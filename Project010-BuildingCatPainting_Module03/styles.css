@@ -92,3 +92,9 @@ body{
     border-radius: 60%;
     transform: rotate(-25deg);
 }
+
+.cat-left-inner-eye{
+    width: 10px;
+    height: 20px;
+    background-color: #fff;
+}
