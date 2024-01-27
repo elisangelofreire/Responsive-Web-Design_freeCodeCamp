@@ -108,5 +108,9 @@ body{
     width: 10px;
     height: 20px;
     background-color: #fff;
-    
+    position: absolute;
+    top: 8px;
+    left: 18px;
+    border-radius: 60%;
+    transform: rotate(-5deg);    
 }
