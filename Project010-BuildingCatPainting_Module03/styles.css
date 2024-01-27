@@ -114,3 +114,9 @@ body{
     border-radius: 60%;
     transform: rotate(-5deg);    
 }
+
+.cat-nose{
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #442c2c;
+}
