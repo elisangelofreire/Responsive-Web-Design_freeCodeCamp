@@ -81,3 +81,9 @@ body{
     border-radius: 60%;
     transform: rotate(25deg);
 }
+
+.cat-right-eye{
+    width: 30px;
+    height: 40px;
+    background-color: #000;
+}
