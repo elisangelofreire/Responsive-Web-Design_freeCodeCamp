@@ -13,6 +13,7 @@ html{
     margin: 80px auto;
     padding: 90px 20px 0 20px;
     position: relative; /*because the logo position*/
+    border-radius: 10px;
 }
 
 .keys{
