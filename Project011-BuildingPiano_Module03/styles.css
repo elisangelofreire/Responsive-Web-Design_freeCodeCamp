@@ -50,6 +50,7 @@ html{
     top: 23px;
 }
 
+/*@media query to if the browser window smaller than 768px*/
 @media (max-width: 768px) {
     #piano{
         width: 358px;
@@ -61,5 +62,16 @@ html{
 
     .logo{
         width: 150px;
+    }
+}
+
+/*@media query to if the browser window is wider than 769px but smaller than 1199px*/
+@media (min-width: 769px) and (max-width: 1199px) {
+    #piano{
+        width: 675px;
+    }  
+    
+    .keys{
+        width: 633px;
     }
 }
