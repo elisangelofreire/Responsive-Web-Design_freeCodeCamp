@@ -23,17 +23,123 @@
 
     <main id="main-doc">
         <section class="main-section" id="introduction">
-            <header>Introduction</header>
+            <header>Introduction to Bash Scripting</header>
+            <article>
+                <p><strong>Bash</strong> or <strong>shell</strong> scripting** is a great way to automate repetitive tasks and can save you a ton of time as a developer. Bash scripts execute within a Bash shell interpreter terminal. Any command you can run in your terminal can be run in a Bash script. When you have a command or set of commands that you will be using frequently, consider writing a Bash script to perform it.</p>
+                <p>There are some conventions to follow to ensure that your computer is able to find and execute your Bash scripts:</p>
+                <ul>
+                    <li>The beginning of your script file should start with <strong>#!/bin/bash</strong> on its own line. This tells the computer which type of interpreter to use for the script.</li>
+                    <li>When saving the script file, it is good practice to place commonly used scripts in the ~/bin/ directory</li>
+                </ul>
+                <p>The script files also need to have the “execute” permission to allow them to be run. To add this permission to a file with filename: script.sh use: <strong>chmod +x script.sh</strong></p>
+                <p>Your terminal runs a file every time it is opened to load its configuration. On Linux style shells, this is <strong>~/.bashrc</strong> and on OSX, this is <strong>~/.bash_profile</strong>. To ensure that scripts in ~/bin/ are available, you must add this directory to your PATH within your configuration file: <strong>PATH=~/bin:$PATH</strong></p>
+                <p>Now any scripts in the ~/bin directory can be run from anywhere by typing the filename.</p>
+            </article>
         </section>
 
         <section class="main-section" id="variables">
             <header>Variables</header>
-            <article></article>
+            <article>
+                <p>Within bash scripts (or the terminal for that matter), variables are declared by setting the variable name equal to another value. For example, to set the variable greeting to “Hello”, you would use the following syntax:</p>
+
+                <code>greeting="Hello"</code>
+                    
+                <p>Note that there is no space between the variable name, the equals sign, or “Hello”.</p>
+                    
+                <p>To access the value of a variable, we use the variable name prepended with a dollar sign ($). In the previous example, if we want to print the variable value to the screen, we use the following syntax:</p>
+                    
+                <code>echo $greeting</code>
+                    
+            </article>
         </section>
 
         <section class="main-section" id="conditionals">
             <header>Conditionals</header>
-            <article></article>
+            <article>
+                <p>When bash scripting, you can use conditionals to control which set of commands within the script run. Use if to start the conditional, followed by the condition in square brackets ([ ]). then begins the code that will run if the condition is met. else begins the code that will run if the condition is not met. Lastly, the conditional is closed with a backwards if, fi.</p>
+
+                <p>A complete conditional in a bash script uses the following syntax:</p>
+                    
+                    <code>
+                        if [ $index -lt 5 ]
+                        then
+                          echo $index
+                        else
+                          echo 5
+                        fi
+                    </code>
+                    
+                <p>Bash scripts use a specific list of operators for comparison. Here we used -lt which is “less than”. The result of this conditional is that if $index is less than 5, it will print to the screen. If it is 5 or greater, “5” will be printed to the screen.</p>
+                    
+                    
+                <h2>operators to compare numbers</h2>
+                    
+                <p>Here is the list of comparison operators for numbers you can use within bash scripts:</p>
+                    
+                <table>
+                    <thead>
+                        <th>Compare Number</th>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>Equal:</td>
+                                <td>-eq</td>
+                            </tr>
+                            <tr>
+                                <td>Not equal:</td>
+                                <td>-ne</td>
+                            </tr>
+                            <tr>
+                                <td>Less than or equal:</td>
+                                <td>-le</td>
+                            </tr>
+                            <tr>
+                                <td>Less than:</td>
+                                <td>-lt</td>
+                            </tr>
+                            <tr>
+                                <td>Greater than or equal:</td>
+                                <td>-ge</td>
+                            </tr>
+                            <tr>
+                                <td>Greater than:</td>
+                                <td>-gt</td>
+                            </tr>
+                            <tr>
+                                <td>Is null:</td>
+                                <td>-z</td>
+                            </tr>
+                        </tbody>
+                    </table>               
+                     
+                    
+                <h2>operators to compare strings</h2>
+                    
+                <p>When comparing strings, it is best practice to put the variable into quotes ("). This prevents errors if the variable is null or contains spaces. The common operators for comparing strings are:</p>
+                    
+                     
+                <table>
+                    <thead>
+                        <th>Compare Strings</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Equal:</td>
+                            <td>==</td>
+                        </tr>
+                        <tr>
+                            <td>Not equal:</td>
+                            <td>!=</td>
+                        </tr>                               
+                    </tbody>
+                </table>
+                    
+                <p>For example, to compare if the variables foo and bar contain the same string:</p>
+                    
+                <code>
+                    if [ "$foo" == "$bar"]
+                </code>
+            </article>
         </section>
 
         <section class="main-section" id="loops">
