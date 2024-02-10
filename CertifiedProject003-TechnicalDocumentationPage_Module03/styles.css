@@ -1,3 +1,14 @@
+body{
+    line-height: 1.5;
+}
+
+header{
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 400;
+}
 nav{
     display: block;
 }
@@ -6,7 +17,7 @@ nav{
     left: 0;
     top: 0;
     min-width: 290px;
-    width: 300px;
+    width: 325px;
     height: 100%;
     border-right: solid;
     border-color: gray;
