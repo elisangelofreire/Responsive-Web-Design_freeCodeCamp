@@ -9,9 +9,11 @@ header{
     font-size: 1.8em;
     font-weight: 400;
 }
+
 nav{
     display: block;
 }
+
 #navbar{
     position: fixed;
     left: 0;
@@ -23,12 +25,61 @@ nav{
     border-color: gray;
 }
 
+#navbar ul{
+    height: 90%;
+    padding: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#navbar li{
+    color: #222;
+    border-bottom: 1px solid;
+    width: 100%;
+    list-style: none;
+    /*padding: 10px;*/
+}
+
+#navbar a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    color: #222;
+}
+
+#navbar a:hover{
+    background-color: #804492;
+    color: #FFF;
+    font-weight: bold;
+}
+
+ul{
+    display: block;
+    padding: 10px;   
+}
+
 #main-doc{
     position: absolute;   
     margin-left: 310px;
     padding: 22px;
     margin-bottom: 110px;
 }
+
+#main-doc header{
+    text-align: left;
+    margin: 0;
+}
+
+main{
+    display: block;
+}
+
+section article{
+    margin: 15px;
+    font-size: 0.9em;
+}
+
 /*@media query to if the browser window smaller than 768px*/
 @media (max-width: 768px) {
     #navbar{
