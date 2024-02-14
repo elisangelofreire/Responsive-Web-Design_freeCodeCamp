@@ -16,6 +16,7 @@
             <li><a href="#loops" class="nav-link">Loops</a></li>
             <li><a href="#inputs" class="nav-link">Inputs</a></li>
             <li><a href="#aliases" class="nav-link">Aliases</a></li>
+            <li><a href="#review" class="nav-link">Review</a></li>
             <li><a href="#exercises_quiz" class="nav-link">Exercises-Quiz</a></li>
             <li><a href="#reference" class="nav-link">Reference</a></li>
         </ul>
@@ -60,14 +61,14 @@
 
                 <p>A complete conditional in a bash script uses the following syntax:</p>
                     
-                    <code>
+                    <pre>
                         if [ $index -lt 5 ]
                         then
                           echo $index
                         else
                           echo 5
                         fi
-                    </code>
+                    </pre>
                     
                 <p>Bash scripts use a specific list of operators for comparison. Here we used -lt which is “less than”. The result of this conditional is that if $index is less than 5, it will print to the screen. If it is 5 or greater, “5” will be printed to the screen.</p>
                     
@@ -78,7 +79,7 @@
                     
                 <table>
                     <thead>
-                        <th>Compare Number</th>
+                        <tr><th>Compare Number</th></tr>                        
                     </thead>
                     <tbody>
                             <tr>
@@ -120,7 +121,7 @@
                      
                 <table>
                     <thead>
-                        <th>Compare Strings</th>
+                        <tr><th>Compare Strings</th></tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -144,22 +145,177 @@
 
         <section class="main-section" id="loops">
             <header>Loops</header>
-            <article></article>
+            <article>
+                <p>There are 3 different ways to loop within a bash script: <strong>for</strong>, <strong>while</strong> and <strong>until</strong>.</p>
+
+                <p>A <strong>for</strong> loop is used to iterate through a list and execute an action at each step. For example, if we had a list of words stored in a variable paragraph, we could use the following syntax to print each one:</p>
+
+                <figure>
+                    <pre>
+                    for word in $paragraph
+                    do
+                      echo $word
+                    done 
+                    </pre>
+                </figure>
+                    
+                <p>Note that word is being “defined” at the top of the for loop so there is no $ prepended. Remember that we prepend the $ when accessing the value of the variable. So, when accessing the variable within the do block, we use $word as usual.</p>
+                    
+                <p>Within bash scripting until and while are very similar.</p> 
+                    
+                <p><strong>while</strong>loops keep looping while the provided condition is true whereas until loops loop until the condition is true. Conditions are established the same way as they are within an if block, between square brackets. If we want to print the index variable as long as it is less than 5, we would use the following while loop:</p>
+                    
+                <pre>
+                    while [ $index -lt 5 ]
+                    do
+                      echo $index
+                      index=$((index + 1))
+                    done
+                </pre>
+                    
+                <p>Note that arithmetic in bash scripting uses the $((...)) syntax and within the brackets the variable name is not prepended with a $.</p>                
+                    
+                <p>The same loop could also be written as an <strong>until</strong> loop as follows:</p>
+                
+                <pre>
+                    until [ $index -eq 5 ]
+                    do
+                      echo $index
+                      index=$((index + 1))
+                    done
+                </pre>                    
+            </article>
         </section>
 
         <section class="main-section" id="inputs">
             <header>Inputs</header>
-            <article></article>
+            <article>
+                <p>To make bash scripts more useful, we need to be able to access data external to the bash script file itself.</p>
+
+                <ol class="ol-one"><li>a) read syntax</li></ol>
+                <p>The first way to do this is by prompting the <strong>user for input</strong>. For this, we use the <strong>read</strong> syntax. To ask the user for input and save it to the <strong>number</strong> variable, we would use the following code:</p>
+                    
+                <pre>
+                    echo "Guess a number"
+                    read number
+                    echo "You guessed $number"
+                </pre>                    
+                            
+                <ol class="ol-two"><li>b) inputs arguments</li></ol>
+                <p>Another way to access external data is to have the user add input **arguments** when they run your script. These arguments are entered after the script name and are separated by spaces. For example:</p>
+                    
+                <pre>
+                    <code>saycolors red green blue</code>
+                </pre>
+                    
+                <p>Within the script, these are accessed using $1, $2, etc, where $1 is the first argument (here, “red”) and so on. Note that these are 1 indexed.</p>
+                    
+                <p>If your script needs to accept an indefinite number of input arguments, you can iterate over them using the "$@" syntax. For our saycolors example, we could print each color using:</p>
+                    
+                <pre>
+                    for color in "$@"
+                    do
+                      echo $color
+                    done
+                </pre>
+                                        
+                <ol class="ol-three"><li>c) regular expressions</li></ol>
+                <p>Lastly, we can access external files to our script. You can assign a set of files to a variable name using standard bash pattern matching using regular expressions. For example, to get all files in a directory, you can use the * character:</p>
+                    
+                <pre>
+                    <code>files=/some/directory/*</code>
+                </pre>
+                    
+                <p>You can then iterate through each file and do something. Here, lets just print the full path and filename:</p>
+                    
+                <pre>
+                    for file in $files
+                    do
+                      echo $file
+                    done
+                </pre>
+            </article>
         </section>
 
         <section class="main-section" id="aliases">
             <header>Aliases</header>
-            <article></article>
+            <article>
+                <p>You can set up aliases for your bash scripts within your <strong>.bashrc</strong> or <strong>.bash_profile</strong> file to allow calling your scripts without the full filename. For example, if we have our saycolors.sh script, we can alias it to the word saycolors using the following syntax:</p>
+
+                <pre>
+                    <code>alias saycolors='./saycolors.sh'</code>
+                </pre>    
+                    
+                <p>You can even add standard input arguments to your alias. For example, if we always want “green” to be included as the first input to saycolors, we could modify our alias to:</p>
+
+                <pre>
+                    <code>alias saycolors='./saycolors.sh "green"'</code>
+                </pre>                    
+            </article>
+        </section>
+
+        <section class="main-section" id="review">
+            <header>Review</header>
+            <article>
+                <p>Now it's time to take a minute to review what you've learned about bash scripting.</p>
+                <ul>
+                    <li>Any command that can be run in the terminal can be run in a bash script.</li>
+                    <li>Variables are assigned using an equals sign with no space (greeting="hello").</li>
+                    <li>Variables are accessed using a dollar sign (echo $greeting).</li>
+                    <li>Conditionals use if, then, else, fi syntax.</li>
+                    <li>Three types of loops can be used: for, while, and until.</li>
+                    <li>Bash scripts use a unique set of comparison operators:
+                        <ul>
+                            <li class="li-sub-second">Equal: -eq</li>
+                            <li class="li-sub-second">Not equal: -ne</li>
+                            <li class="li-sub-second">Less than or equal: -le</li>
+                            <li class="li-sub-second">Less than: -lt</li>
+                            <li class="li-sub-second">Greater than or equal: -ge</li>
+                            <li class="li-sub-second">Greater than: -gt</li>
+                            <li class="li-sub-second">Is null: -z</li>
+                        </ul>
+                    </li>
+                    <li>Input arguments can be passed to a bash script after the script name, separated by spaces (myScript.sh “hello” “how are you”).</li>
+                    <li>Input can be requested from the script user with the read keyword.</li>
+                    <li>Aliases can be created in the .bashrc or .bash_profile using the alias keyword.</li>
+                </ul>                    
+            </article>
         </section>
 
         <section class="main-section" id="exercises_quiz">
             <header>Exercises-Quiz</header>
-            <article></article>
+            <article>
+                <h2>Exercises</h2>
+                <h3>Instructions</h3>
+                <p>Take the original completed script bellow and feel free to edit it to make it your own.</p>
+                <p>Some ideas:</p>
+                <ul>
+                    <li>ask the user for different greetings</li>
+                    <li>add more than two greetings</li>
+                    <li>add more conditions to adjust the greetings over time</li>
+                </ul>
+
+                <h3>Complete Script:</h3>
+                <pre>
+                    <code>
+                        #!/bin/bash
+                        first_greeting="Nice to meet you!"
+                        later_greeting="How are you?"
+                        greeting_occasion=0
+                        greeting_limit=$1
+                        while [ $greeting_occasion -lt $greeting_limit ]
+                        do
+                          if [ $greeting_occasion -lt 1 ]
+                          then
+                            echo $first_greeting
+                          else
+                            echo $later_greeting
+                          fi
+                          greeting_occasion=$((greeting_occasion + 1))
+                        done
+                    </code>
+                </pre>                                      
+            </article>
         </section>
 
         <section class="main-section" id="reference">
