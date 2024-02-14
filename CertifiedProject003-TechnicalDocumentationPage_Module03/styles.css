@@ -3,11 +3,14 @@ body{
 }
 
 header{
-    color: black;
+    color: #FFF;
+    background-color: #804492;
     margin: 10px;
     text-align: center;
     font-size: 1.8em;
     font-weight: 400;
+    border-radius: 5px;
+    padding-left: 5px;
 }
 
 nav{
