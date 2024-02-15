@@ -93,6 +93,19 @@ section li{
     margin: 15px 0 0 20px;
 }
 
+code{
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #bbb8b89d;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
 /*@media query to if the browser window smaller than 768px*/
 @media (max-width: 768px) {
     #navbar{

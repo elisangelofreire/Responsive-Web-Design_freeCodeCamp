@@ -61,14 +61,14 @@
 
                 <p>A complete conditional in a bash script uses the following syntax:</p>
                     
-                    <pre>
-                        if [ $index -lt 5 ]
-                        then
-                          echo $index
-                        else
-                          echo 5
-                        fi
-                    </pre>
+                <code>
+                    if [ $index -lt 5 ]
+                    then
+                        echo $index
+                    else
+                        echo 5
+                    fi
+                </code>
                     
                 <p>Bash scripts use a specific list of operators for comparison. Here we used -lt which is “less than”. The result of this conditional is that if $index is less than 5, it will print to the screen. If it is 5 or greater, “5” will be printed to the screen.</p>
                     
@@ -150,14 +150,12 @@
 
                 <p>A <strong>for</strong> loop is used to iterate through a list and execute an action at each step. For example, if we had a list of words stored in a variable paragraph, we could use the following syntax to print each one:</p>
 
-                <figure>
-                    <pre>
+                <code>
                     for word in $paragraph
                     do
                       echo $word
                     done 
-                    </pre>
-                </figure>
+                </code>                
                     
                 <p>Note that word is being “defined” at the top of the for loop so there is no $ prepended. Remember that we prepend the $ when accessing the value of the variable. So, when accessing the variable within the do block, we use $word as usual.</p>
                     
@@ -165,25 +163,25 @@
                     
                 <p><strong>while</strong>loops keep looping while the provided condition is true whereas until loops loop until the condition is true. Conditions are established the same way as they are within an if block, between square brackets. If we want to print the index variable as long as it is less than 5, we would use the following while loop:</p>
                     
-                <pre>
+                <code>
                     while [ $index -lt 5 ]
                     do
                       echo $index
                       index=$((index + 1))
                     done
-                </pre>
+                </code>
                     
                 <p>Note that arithmetic in bash scripting uses the $((...)) syntax and within the brackets the variable name is not prepended with a $.</p>                
                     
                 <p>The same loop could also be written as an <strong>until</strong> loop as follows:</p>
                 
-                <pre>
+                <code>
                     until [ $index -eq 5 ]
                     do
                       echo $index
                       index=$((index + 1))
                     done
-                </pre>                    
+                </code>                    
             </article>
         </section>
 
@@ -195,45 +193,41 @@
                 <ol class="ol-one"><li>a) read syntax</li></ol>
                 <p>The first way to do this is by prompting the <strong>user for input</strong>. For this, we use the <strong>read</strong> syntax. To ask the user for input and save it to the <strong>number</strong> variable, we would use the following code:</p>
                     
-                <pre>
+                <code>
                     echo "Guess a number"
                     read number
                     echo "You guessed $number"
-                </pre>                    
+                </code>                    
                             
                 <ol class="ol-two"><li>b) inputs arguments</li></ol>
                 <p>Another way to access external data is to have the user add input **arguments** when they run your script. These arguments are entered after the script name and are separated by spaces. For example:</p>
                     
-                <pre>
-                    <code>saycolors red green blue</code>
-                </pre>
-                    
+                <code>saycolors red green blue</code>
+                                    
                 <p>Within the script, these are accessed using $1, $2, etc, where $1 is the first argument (here, “red”) and so on. Note that these are 1 indexed.</p>
                     
                 <p>If your script needs to accept an indefinite number of input arguments, you can iterate over them using the "$@" syntax. For our saycolors example, we could print each color using:</p>
                     
-                <pre>
+                <code>
                     for color in "$@"
                     do
                       echo $color
                     done
-                </pre>
+                </code>
                                         
                 <ol class="ol-three"><li>c) regular expressions</li></ol>
                 <p>Lastly, we can access external files to our script. You can assign a set of files to a variable name using standard bash pattern matching using regular expressions. For example, to get all files in a directory, you can use the * character:</p>
                     
-                <pre>
-                    <code>files=/some/directory/*</code>
-                </pre>
-                    
+                <code>files=/some/directory/*</code>
+                                    
                 <p>You can then iterate through each file and do something. Here, lets just print the full path and filename:</p>
                     
-                <pre>
+                <code>
                     for file in $files
                     do
                       echo $file
                     done
-                </pre>
+                </code>
             </article>
         </section>
 
@@ -242,15 +236,10 @@
             <article>
                 <p>You can set up aliases for your bash scripts within your <strong>.bashrc</strong> or <strong>.bash_profile</strong> file to allow calling your scripts without the full filename. For example, if we have our saycolors.sh script, we can alias it to the word saycolors using the following syntax:</p>
 
-                <pre>
-                    <code>alias saycolors='./saycolors.sh'</code>
-                </pre>    
-                    
+                <code>alias saycolors='./saycolors.sh'</code>
+                                    
                 <p>You can even add standard input arguments to your alias. For example, if we always want “green” to be included as the first input to saycolors, we could modify our alias to:</p>
-
-                <pre>
-                    <code>alias saycolors='./saycolors.sh "green"'</code>
-                </pre>                    
+                <code>alias saycolors='./saycolors.sh "green"'</code>                                    
             </article>
         </section>
 
@@ -296,8 +285,7 @@
                 </ul>
 
                 <h3>Complete Script:</h3>
-                <pre>
-                    <code>
+                <code>
                         #!/bin/bash
                         first_greeting="Nice to meet you!"
                         later_greeting="How are you?"
@@ -313,14 +301,13 @@
                           fi
                           greeting_occasion=$((greeting_occasion + 1))
                         done
-                    </code>
-                </pre>                                      
+                </code>                                                     
             </article>
         </section>
 
         <section class="main-section" id="reference">
             <header>Reference</header>
-            <ul><li>All information in this page is taken from the course <em>Learn the Command Line</em> in <a href="https://www.codecademy.com/catalog/language/bash">CodeCademy</a>  </li></ul>
+            <ul><li>All information in this page is taken from the course <em>Learn the Command Line</em> in <a href="https://www.codecademy.com/catalog/language/bash" target="_blank">CodeCademy</a>  </li></ul>
         </section>
 
     </main>
