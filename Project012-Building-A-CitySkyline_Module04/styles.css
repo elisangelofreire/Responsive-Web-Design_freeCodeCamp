@@ -2,3 +2,9 @@
     border: 1px solid black;
     box-sizing: border-box;
 }
+
+body{
+    height: 100vh; /*make the body fill the whole viewort*/
+    margin: 0;
+    overflow: hidden; /*to hide any scroll bars*/
+}
