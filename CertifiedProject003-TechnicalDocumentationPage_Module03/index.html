@@ -10,23 +10,23 @@
     <nav id="navbar">
         <header>Bash Scripting Document</header>
         <ul>
-            <li><a href="#introduction" class="nav-link">Introduction</a></li>
-            <li><a href="#variables" class="nav-link">Variables</a></li>
-            <li><a href="#conditionals" class="nav-link">Conditional</a></li>
-            <li><a href="#loops" class="nav-link">Loops</a></li>
-            <li><a href="#inputs" class="nav-link">Inputs</a></li>
-            <li><a href="#aliases" class="nav-link">Aliases</a></li>
-            <li><a href="#review" class="nav-link">Review</a></li>
-            <li><a href="#exercises_quiz" class="nav-link">Exercises-Quiz</a></li>
-            <li><a href="#reference" class="nav-link">Reference</a></li>
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#Variables" class="nav-link">Variables</a></li>
+            <li><a href="#Conditionals" class="nav-link">Conditional</a></li>
+            <li><a href="#Loops" class="nav-link">Loops</a></li>
+            <li><a href="#Inputs" class="nav-link">Inputs</a></li>
+            <li><a href="#Aliases" class="nav-link">Aliases</a></li>
+            <li><a href="#Review" class="nav-link">Review</a></li>
+            <li><a href="#Exercises" class="nav-link">Exercises</a></li>
+            <li><a href="#Reference" class="nav-link">Reference</a></li>
         </ul>
     </nav>
 
     <main id="main-doc">
-        <section class="main-section" id="introduction">
+        <section class="main-section" id="Introduction">
             <header>Introduction to Bash Scripting</header>
             <article>
-                <p><strong>Bash</strong> or <strong>shell</strong> scripting** is a great way to automate repetitive tasks and can save you a ton of time as a developer. Bash scripts execute within a Bash shell interpreter terminal. Any command you can run in your terminal can be run in a Bash script. When you have a command or set of commands that you will be using frequently, consider writing a Bash script to perform it.</p>
+                <p><strong>Bash</strong> or <strong>shell</strong> scripting is a great way to automate repetitive tasks and can save you a ton of time as a developer. Bash scripts execute within a Bash shell interpreter terminal. Any command you can run in your terminal can be run in a Bash script. When you have a command or set of commands that you will be using frequently, consider writing a Bash script to perform it.</p>
                 <p>There are some conventions to follow to ensure that your computer is able to find and execute your Bash scripts:</p>
                 <ul>
                     <li>The beginning of your script file should start with <strong>#!/bin/bash</strong> on its own line. This tells the computer which type of interpreter to use for the script.</li>
@@ -38,7 +38,7 @@
             </article>
         </section>
 
-        <section class="main-section" id="variables">
+        <section class="main-section" id="Variables">
             <header>Variables</header>
             <article>
                 <p>Within bash scripts (or the terminal for that matter), variables are declared by setting the variable name equal to another value. For example, to set the variable greeting to “Hello”, you would use the following syntax:</p>
@@ -54,7 +54,7 @@
             </article>
         </section>
 
-        <section class="main-section" id="conditionals">
+        <section class="main-section" id="Conditionals">
             <header>Conditionals</header>
             <article>
                 <p>When bash scripting, you can use conditionals to control which set of commands within the script run. Use if to start the conditional, followed by the condition in square brackets ([ ]). then begins the code that will run if the condition is met. else begins the code that will run if the condition is not met. Lastly, the conditional is closed with a backwards if, fi.</p>
@@ -73,7 +73,7 @@
                 <p>Bash scripts use a specific list of operators for comparison. Here we used -lt which is “less than”. The result of this conditional is that if $index is less than 5, it will print to the screen. If it is 5 or greater, “5” will be printed to the screen.</p>
                     
                     
-                <h2>operators to compare numbers</h2>
+                <h2>Operators to compare numbers</h2>
                     
                 <p>Here is the list of comparison operators for numbers you can use within bash scripts:</p>
                     
@@ -114,11 +114,10 @@
                     </table>               
                      
                     
-                <h2>operators to compare strings</h2>
+                <h2>Operators to compare strings</h2>
                     
                 <p>When comparing strings, it is best practice to put the variable into quotes ("). This prevents errors if the variable is null or contains spaces. The common operators for comparing strings are:</p>
-                    
-                     
+                                     
                 <table>
                     <thead>
                         <tr><th>Compare Strings</th></tr>
@@ -143,7 +142,7 @@
             </article>
         </section>
 
-        <section class="main-section" id="loops">
+        <section class="main-section" id="Loops">
             <header>Loops</header>
             <article>
                 <p>There are 3 different ways to loop within a bash script: <strong>for</strong>, <strong>while</strong> and <strong>until</strong>.</p>
@@ -185,7 +184,7 @@
             </article>
         </section>
 
-        <section class="main-section" id="inputs">
+        <section class="main-section" id="Inputs">
             <header>Inputs</header>
             <article>
                 <p>To make bash scripts more useful, we need to be able to access data external to the bash script file itself.</p>
@@ -231,7 +230,7 @@
             </article>
         </section>
 
-        <section class="main-section" id="aliases">
+        <section class="main-section" id="Aliases">
             <header>Aliases</header>
             <article>
                 <p>You can set up aliases for your bash scripts within your <strong>.bashrc</strong> or <strong>.bash_profile</strong> file to allow calling your scripts without the full filename. For example, if we have our saycolors.sh script, we can alias it to the word saycolors using the following syntax:</p>
@@ -243,7 +242,7 @@
             </article>
         </section>
 
-        <section class="main-section" id="review">
+        <section class="main-section" id="Review">
             <header>Review</header>
             <article>
                 <p>Now it's time to take a minute to review what you've learned about bash scripting.</p>
@@ -271,8 +270,8 @@
             </article>
         </section>
 
-        <section class="main-section" id="exercises_quiz">
-            <header>Exercises-Quiz</header>
+        <section class="main-section" id="Exercises">
+            <header>Exercises</header>
             <article>
                 <h2>Exercises</h2>
                 <h3>Instructions</h3>
@@ -286,26 +285,26 @@
 
                 <h3>Complete Script:</h3>
                 <code>
-                        #!/bin/bash
-                        first_greeting="Nice to meet you!"
-                        later_greeting="How are you?"
-                        greeting_occasion=0
-                        greeting_limit=$1
-                        while [ $greeting_occasion -lt $greeting_limit ]
+                      #!/bin/bash
+                      first_greeting="Nice to meet you!"
+                      later_greeting="How are you?"
+                      greeting_occasion=0
+                      greeting_limit=$1
+                      while [ $greeting_occasion -lt $greeting_limit ]
                         do
-                          if [ $greeting_occasion -lt 1 ]
-                          then
-                            echo $first_greeting
-                          else
-                            echo $later_greeting
-                          fi
-                          greeting_occasion=$((greeting_occasion + 1))
-                        done
+                      if [ $greeting_occasion -lt 1 ]
+                      then
+                        echo $first_greeting
+                      else
+                        echo $later_greeting
+                      fi
+                        greeting_occasion=$((greeting_occasion + 1))
+                      done
                 </code>                                                     
             </article>
         </section>
 
-        <section class="main-section" id="reference">
+        <section class="main-section" id="Reference">
             <header>Reference</header>
             <ul><li>All information in this page is taken from the course <em>Learn the Command Line</em> in <a href="https://www.codecademy.com/catalog/language/bash" target="_blank">CodeCademy</a>  </li></ul>
         </section>
