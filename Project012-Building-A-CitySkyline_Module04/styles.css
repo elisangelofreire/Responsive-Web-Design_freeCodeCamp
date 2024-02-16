@@ -13,3 +13,8 @@ body{
     width: 100%;
     height: 100%; /*to fill its parent, in this case, body*/
 }
+
+.bb1{ /* bb = background building*/
+    width: 10%;
+    height: 70%;
+}
