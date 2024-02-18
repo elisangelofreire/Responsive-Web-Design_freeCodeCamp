@@ -12,7 +12,9 @@ body{
 .background-buildings{
     width: 100%;
     height: 100%; /*to fill its parent, in this case, body*/
-    
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
 }
 
 .bb1{ /* bb = background building*/
