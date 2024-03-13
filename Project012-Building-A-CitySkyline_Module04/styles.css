@@ -83,7 +83,10 @@ body{
     height: 100%;
     position: absolute;
     top: 0;
-    /*This set property above make the element in the same size as the body and above the div background-buildings*/
+    /*Property above make the element in the same size as the body and above the div background-buildings*/
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
 }
 
 .fb1{
