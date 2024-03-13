@@ -85,3 +85,33 @@ body{
     top: 0;
     /*This set property above make the element in the same size as the body and above the div background-buildings*/
 }
+
+.fb1{
+    width: 10%;
+    height: 60%;
+}
+
+.fb2{
+    width: 10%;
+    height: 40%;
+}
+
+.fb3{
+    width: 10%;
+    height: 35%;
+}
+
+.fb4{
+    width: 8%;
+    height: 45%;
+}
+
+.fb5{
+    width: 10%;
+    height: 33%;
+}
+
+.fb6{
+    width: 9%;
+    height: 38%;
+}
