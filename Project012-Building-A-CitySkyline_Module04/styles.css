@@ -44,20 +44,20 @@ body{
 .bb1a{
     width: 70%;
     /*height: 10%; Moved to .bb1-window*/
-    background-color: var(--building-color1);
+    /*background-color: var(--building-color1); Removed*/
     /*background: linear-gradient(var(--building-color1), var(--window-color1)); Moved to .bb1-window*/
 }
 
 .bb1b{
     width: 80%;
-    height: 10%;
-    background-color: var(--building-color1);
+    /*height: 10%; 
+    background-color: var(--building-color1); Removed*/
 }
 
 .bb1c{
     width: 90%;
-    height: 10%;
-    background-color: var(--building-color1);
+    /*height: 10%;
+    background-color: var(--building-color1); Removed*/
 }
 
 .bb1d{
