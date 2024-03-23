@@ -64,7 +64,7 @@ body{
     width: 100%;
     height: 70%;
     /*background-color: var(--building-color1); Removed*/
-    background: linear-gradient(orange, var(--building-color1) 80%, var(--window-color1));
+    background: linear-gradient(var(--building-color1) 50%, var(--window-color1));
 }
 
 .bb1-window{
