@@ -172,12 +172,13 @@ body{
 .fb1{
     width: 10%;
     height: 60%;
-    background-color: var(--building-color4);
+    /*background-color: var(--building-color4); Moving to .fb1b*/
 }
 
 .fb1b{
     width: 60%;
     height: 10%;
+    background-color: var(--building-color4);
 }
 
 .fb1c{
