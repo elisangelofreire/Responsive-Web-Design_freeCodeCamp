@@ -37,6 +37,12 @@ body{
     align-items: center;
 }
 
+.window-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 /*BACKGROUND BUILDINGS - "bb" stands for "background building"*/
 .bb1{ /* bb = background building*/
     width: 10%;
