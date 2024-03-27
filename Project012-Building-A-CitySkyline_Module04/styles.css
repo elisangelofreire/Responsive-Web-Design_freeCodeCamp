@@ -30,7 +30,7 @@ body{
     justify-content: space-evenly;
 }
 
-.building-wrap{ /*To share*/
+.building-wrap{ /*To share .bb1 and .bb4 properties*/
     display: flex;
     flex-direction: column;
     align-items: center;
