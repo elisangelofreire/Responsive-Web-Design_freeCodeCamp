@@ -144,6 +144,12 @@ body{
     background-color: var(--building-color4);
 }
 
+.bb4-window{
+    width: 18%;
+    height:90%;
+    background-color: var(--window-color4);
+}
+
 /* Removing to clean the code. We put this code block by the .background-buildings
 .foreground-buildings{
     width: 100%;
