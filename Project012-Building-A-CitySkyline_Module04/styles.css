@@ -104,7 +104,7 @@ body{
 .bb3{
     width: 10%;
     height: 55%;
-    background-color: var(--building-color3 /*, pink*/);
+    /*background-color: var(--building-color3 /*, pink); Removed */
     background: repeating-linear-gradient(
         90deg,
         var(--building-color3),
