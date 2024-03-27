@@ -30,17 +30,19 @@ body{
     justify-content: space-evenly;
 }
 
-.building-wrap{
-
+.building-wrap{ /*To share*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*BACKGROUND BUILDINGS - "bb" stands for "background building"*/
 .bb1{ /* bb = background building*/
     width: 10%;
     height: 70%;
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; MOVED to .building-wrap*/
     /*Moving variable to :root selector to make them usable everywhere*/
     /*--building-color1: #aa80ff;
     --building-color2: #66cc99;
