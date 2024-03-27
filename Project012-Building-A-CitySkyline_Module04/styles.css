@@ -119,6 +119,21 @@ body{
     background-color: var(--building-color4);
 }
 
+.bb4a{
+    width: 3%;
+    height: 10%;
+}
+
+.bb4b{
+    width: 80%;
+    height: 5%;
+}
+
+.bb4c{
+    width: 100%;
+    height:85%;
+}
+
 /* Removing to clean the code. We put this code block by the .background-buildings
 .foreground-buildings{
     width: 100%;
