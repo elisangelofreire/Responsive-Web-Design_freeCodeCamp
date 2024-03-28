@@ -257,7 +257,7 @@ body{
 .fb4{
     width: 8%;
     height: 45%;
-    background-color: var(--building-color1);
+    /*background-color: var(--building-color1); Moved to .fb4b */
     position: relative;
     left: 10%;
 }
@@ -265,6 +265,7 @@ body{
 .fb4b{
     width: 100%;
     height: 89%;
+    background-color: var(--building-color1);
 }
 
 .fb5{
