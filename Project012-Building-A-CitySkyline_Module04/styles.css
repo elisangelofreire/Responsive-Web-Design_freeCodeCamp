@@ -10,7 +10,7 @@
 }
 
 *{
-    border: 1px solid black;
+    /*border: 1px solid black; Removing the guide*/
     box-sizing: border-box;
 }
 
