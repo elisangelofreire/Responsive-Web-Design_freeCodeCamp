@@ -337,10 +337,10 @@ body{
     .sky{
         background: radial-gradient( /*sun*/
             circle closest-corner at 15% 15%,
-            #ffcf33 0%,
-            #ffcf33 20%,
-            #ffff66 21%,
-            #bbeeff 100%
+            #ccc 0%,
+            #ccc 20%,
+            #445 21%,
+            #223 100%
         );
     }
 }
