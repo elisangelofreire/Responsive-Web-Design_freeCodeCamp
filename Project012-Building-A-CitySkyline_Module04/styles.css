@@ -307,7 +307,7 @@ body{
 .fb6{
     width: 9%;
     height: 38%;
-    background-color: var(--building-color3);
+    /*background-color: var(--building-color3); Removing because background*/
     background: repeating-linear-gradient(
         90deg,
         var(--building-color3) 0%,
