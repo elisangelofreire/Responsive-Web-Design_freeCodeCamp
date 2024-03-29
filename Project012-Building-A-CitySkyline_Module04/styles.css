@@ -43,6 +43,14 @@ body{
     justify-content: space-evenly;
 }
 
+.sky{
+    background: radial-gradient( /*sun*/
+        #ffcf33 0%,
+        #ffcf33 20%,
+        #ffff66 21%,
+        #bbeeff 100%
+    );
+}
 /*BACKGROUND BUILDINGS - "bb" stands for "background building"*/
 .bb1{ /* bb = background building*/
     width: 10%;
