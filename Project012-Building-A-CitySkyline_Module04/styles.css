@@ -45,6 +45,7 @@ body{
 
 .sky{
     background: radial-gradient( /*sun*/
+        circle closest-corner at 15% 15%,
         #ffcf33 0%,
         #ffcf33 20%,
         #ffff66 21%,
