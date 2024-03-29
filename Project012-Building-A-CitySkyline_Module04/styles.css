@@ -331,3 +331,8 @@ body{
         var(--window-color3) 30%
     );
 }
+
+/*Cahnge styles based on certain conditions screen*/
+@media (max-width: 1000px) {
+    
+}
