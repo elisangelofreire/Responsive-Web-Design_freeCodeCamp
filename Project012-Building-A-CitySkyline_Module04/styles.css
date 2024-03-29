@@ -286,7 +286,7 @@ body{
 .fb5{
     width: 10%;
     height: 33%;
-    background-color: var(--building-color2);
+    /*background-color: var(--building-color2); Removed because background*/
     position: relative;
     right: 10%;
     background: repeating-linear-gradient(
