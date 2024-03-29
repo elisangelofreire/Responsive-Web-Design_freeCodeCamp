@@ -52,6 +52,7 @@ body{
         #bbeeff 100%
     );
 }
+
 /*BACKGROUND BUILDINGS - "bb" stands for "background building"*/
 .bb1{ /* bb = background building*/
     width: 10%;
@@ -138,7 +139,7 @@ body{
 .bb4{
     width: 11%;
     height: 58%;
-    /*background-color: var(--building-color4); Removing*/
+    /*background-color: var(--building-color4); Removed*/
 }
 
 .bb4a{
@@ -332,7 +333,7 @@ body{
     );
 }
 
-/*Cahnge styles based on certain conditions screen*/
+/*Change styles based on certain conditions screen*/
 @media (max-width: 1000px) {
     :root{
         --building-color1: #000;
