@@ -334,6 +334,13 @@ body{
 
 /*Cahnge styles based on certain conditions screen*/
 @media (max-width: 1000px) {
+    :root{
+        --building-color1: #000;
+        --building-color2: #000;
+        --building-color3: #000;
+        --building-color4: #000;
+    }
+
     .sky{
         background: radial-gradient( /*sun*/
             circle closest-corner at 15% 15%,
