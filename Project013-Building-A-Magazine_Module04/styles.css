@@ -7,3 +7,9 @@
 html{
     font-size: 62.5%; /*This will set the default font size for your web page to 10px (the browser default is 16px)*/
 }
+
+body{
+    font-family: Baskervville, serif;
+    color: linen;
+    background-color: rgb(20, 30, 40);
+}
