@@ -3,3 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html{
+    font-size: 62.5%; /*This will set the default font size for your web page to 10px (the browser default is 16px)*/
+}
