@@ -34,6 +34,11 @@ main{
     row-gap: 3rem;
 }
 
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
 .heading{
     display: grid;
     grid-column: 2/3;
