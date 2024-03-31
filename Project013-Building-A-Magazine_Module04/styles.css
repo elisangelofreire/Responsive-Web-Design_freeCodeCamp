@@ -35,6 +35,7 @@ main{
 }
 
 .heading{
+    display: grid;
     grid-column: 2/3;
 }
 
