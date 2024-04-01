@@ -39,6 +39,10 @@ img{
     object-fit: cover;
 }
 
+hr{
+    margin: 1.5rem 0;
+}
+
 .heading{
     display: grid;
     grid-column: 2/3;
